@@ -28,7 +28,7 @@ Route::get('/modelos/marca/{id}','App\Http\Controllers\ModeloController@show');
 Route::get('/dispositivos','App\Http\Controllers\DispositivoController@index');
 Route::get('/dispositivos/modelo/{id}','App\Http\Controllers\DispositivoController@showByModelo');
 Route::get('/dispositivos/marca/{id}','App\Http\Controllers\DispositivoController@showByMarca');
-Route::get('/dispositivos/marca/{id}','App\Http\Controllers\DispositivoController@showByBodega');
+Route::get('/dispositivos/bodega/{id}','App\Http\Controllers\DispositivoController@showByBodega');
 
 // Recurso especifico para los combobox
 Route::get('/dispositivos/{bodega}/{marca}/{modelo}','App\Http\Controllers\DispositivoController@filterBy');

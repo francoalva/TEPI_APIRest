@@ -1,3 +1,18 @@
+# Instrucciones
+    Ejecutar lo siguiente en la interfaz de linea de comandos:
+1. php artisan migrate
+2. php artisan serve
+
+# Recursos
+    Puedes variar los id de consulta para variar resultados
+- [Listar marcas](http://127.0.0.1:8000/marcas)
+- [Listar modelos por marca](http://127.0.0.1:8000/modelos/marca/1)
+- [Listar dispositivos por modelo](http://127.0.0.1:8000/dispositivos/modelo/1)
+- [Listar dispositivos por marca](http://127.0.0.1:8000/dispositivos/marca/1)
+- [Listar dispositivos por bodega](http://127.0.0.1:8000/dispositivos/bodega/1)
+- [Consulta compuesta para n filtros](http://127.0.0.1:8000/dispositivos/1/1/1)
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">

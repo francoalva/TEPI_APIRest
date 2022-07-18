@@ -100,7 +100,7 @@ class DispositivoController extends Controller
             $dispositivos = $dispositivos->where('marcas.id','=',$marca);
         }
         if ($modelo > 0 ) {
-            $dispositivos = $dispositivos->where('marcas.id','=',$modelo);
+            $dispositivos = $dispositivos->where('modelos.id','=',$modelo);
         }
 
         return $dispositivos->get();

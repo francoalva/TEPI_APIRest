@@ -1,6 +1,6 @@
 # Instrucciones
 ## Observaciones
-Editar el archivo [.env]() con las configuraciones de la base de datos local del sistema (MySQL o PostgreSQL). Luego ejecutar lo siguiente en la interfaz de linea de comandos:
+Editar el archivo [.env](https://github.com/francoalva/TEPI_APIRest/blob/master/.env) con las configuraciones de la base de datos local del sistema (MySQL o PostgreSQL). Luego ejecutar lo siguiente en la interfaz de linea de comandos:
 
 1. php artisan migrate
 2. php artisan serve

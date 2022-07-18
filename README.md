@@ -1,5 +1,7 @@
 # Instrucciones
-    Ejecutar lo siguiente en la interfaz de linea de comandos:
+## Observaciones
+Editar el archivo [.env]() con las configuraciones de la base de datos local del sistema (MySQL o PostgreSQL). Luego ejecutar lo siguiente en la interfaz de linea de comandos:
+
 1. php artisan migrate
 2. php artisan serve
 

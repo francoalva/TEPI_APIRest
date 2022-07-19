@@ -33,6 +33,9 @@ Route::group(['middleware' => ['cors']], function () {
     Route::get('/dispositivos/marca/{id}','App\Http\Controllers\DispositivoController@showByMarca');
     Route::get('/dispositivos/bodega/{id}','App\Http\Controllers\DispositivoController@showByBodega');
 
+    Route::get('/dispositivo/{DIS_nombre}/{BOD_id}/{MOD_id}','App\Http\Controllers\DispositivoController@store');
+    Route::post('/dispositivo/','App\Http\Controllers\DispositivoController@store2');
+
     // Recurso especifico para los combobox
     Route::get('/dispositivos/{bodega}/{marca}/{modelo}','App\Http\Controllers\DispositivoController@filterBy');
 });

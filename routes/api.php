@@ -19,7 +19,14 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 */
+
+
 Route::get('/bodegas','App\Http\Controllers\BodegaController@index');
 Route::post('/bodegas','App\Http\Controllers\BodegaController@store');
 Route::put('/bodegas/{id}','App\Http\Controllers\BodegaController@update');
 Route::delete('/bodegas/{id}','App\Http\Controllers\BodegaController@destroy');
+
+
+Route::group(['middleware' => ['cors']], function () {
+    Route::post('/dispositivo/','App\Http\Controllers\DispositivoController@store2');
+});

@@ -37,9 +37,33 @@ class DispositivoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+
+    public function store($DIS_nombre, $BOD_id, $MOD_id)
     {
-        //
+        $dispositivo = new Dispositivo();
+
+        $dispositivo->id = DB::table('dispositivos')->max('id')+1;
+        $dispositivo->DIS_nombre = $DIS_nombre;
+        $dispositivo->BOD_id = $BOD_id;
+        $dispositivo->MOD_id = $MOD_id;
+
+        $dispositivo->save();
+
+        return $dispositivo;
+    }
+    public function store2(Request $request)
+    {
+
+        $dispositivo = new Dispositivo();
+
+        $dispositivo->id = DB::table('dispositivos')->max('id')+1;
+        $dispositivo->DIS_nombre = $request->DIS_nombre;
+        $dispositivo->BOD_id = $request->BOD_id;
+        $dispositivo->MOD_id = $request->MOD_id;
+
+        $dispositivo->save();
+
+        return $dispositivo;
     }
 
     /**

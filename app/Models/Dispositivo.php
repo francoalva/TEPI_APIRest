@@ -9,5 +9,4 @@ class Dispositivo extends Model
 {
     use HasFactory;
     protected $fillable = ['DIS_nombre'];
-
 }
